@@ -12,7 +12,7 @@ export class MatchController {
 
     @Get()
     getUsers(){  
-        console.log('getuserscontroller') 
+        console.log('getuserscontroller')   
         return 'hellohy' 
         //return this.matchService.getUsers()
     }
