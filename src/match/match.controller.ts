@@ -12,8 +12,16 @@ export class MatchController {
 
     @Get()
     getUsers(){  
-        return this.matchService.getUsers()
+        console.log('getuserscontroller') 
+        return 'hellohy' 
+        //return this.matchService.getUsers()
     }
+
+    @Get('/payment')
+    getStripe(){ 
+        console.log('getStripecontroller')
+        return this.matchService.getStripe() 
+    } 
 
     @Get('/:username')
     getUserById(@Param('username') username:string):Promise<User>{
